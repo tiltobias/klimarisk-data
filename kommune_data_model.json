@@ -1,0 +1,93 @@
+{
+  "elements": [
+    {
+      "name": "Hazard",
+      "metrics": [
+        {
+          "name": "Råtefare",
+          "key": "fRatefare"
+        },
+        {
+          "name": "Snødypde 30 cm eller mer",
+          "key": "fSD30p"
+        },
+        {
+          "name": "Stormflofare",
+          "key": "fStormflo"
+        },
+        {
+          "name": "Flomfare",
+          "key": "fFlom"
+        }
+      ]
+    },
+    {
+      "name": "Vulnerability",
+      "metrics": [
+        {
+          "name": "Befolkningstetthet",
+          "key": "sBefTett"
+        },
+        {
+          "name": "Andel yrkesaktive i primærnæringene",
+          "key": "sPrim"
+        },
+        {
+          "name": "Mobilitetssårbarhet",
+          "key": "sMob"
+        },
+        {
+          "name": "Andel sårbare befolkningsgrupper",
+          "key": "sVulPop"
+        }
+      ]
+    },
+    {
+      "name": "Exposure",
+      "metrics": [
+        {
+          "name": "Skade på hus grunnet storm",
+          "key": "eStorm"
+        },
+        {
+          "name": "Skade på hus grunnet stormflo",
+          "key": "eStormflo"
+        },
+        {
+          "name": "Skade på hus grunnet flom",
+          "key": "eFlom"
+        },
+        {
+          "name": "Skade på hus grunnet skred",
+          "key": "eSkred"
+        },
+        {
+          "name": "Skade på hus grunnet overvann",
+          "key": "eOvervann"
+        }
+      ]
+    },
+    {
+      "name": "Respons",
+      "invert": true,
+      "metrics": [
+        {
+          "name": "Lokale tiltak med statlig støtte",
+          "key": "rMaxTilskudd"
+        },
+        {
+          "name": "Vurdering av klimarisiko i kommunal planlegging",
+          "key": "rDSB"
+        },
+        {
+          "name": "Egne tiltak for klimatilpasning",
+          "key": "rTiltak"
+        },
+        {
+          "name": "Bærekraftsinnretning av arbeidet med klimatilpasning",
+          "key": "rBerekraft"
+        }
+      ]
+    }
+  ]
+}
