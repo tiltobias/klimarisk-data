@@ -1,26 +1,41 @@
 # Klimarisk data
 
-Static JSON and GeoJSON datasets used by the [Klimarisk dashboard](https://tiltobias.github.io/klimarisk/).
+Static JSON and GeoJSON data files used by the [Klimarisk dashboard](https://tiltobias.github.io/klimarisk/).
 
-This repository is kept separate from the [dashboard application repository](https://github.com/tiltobias/klimarisk) so maintainers can update and publish the climate-risk data without changing the frontend code. The source Excel workbook and source data model are processed with [`prepare_data.py`](https://github.com/tiltobias/klimarisk/blob/main/scripts/prepare_data.py). The generated files are then committed to this repository and published through GitHub Pages.
+The dashboard application and frontend code are maintained separately in the [klimarisk repository](https://github.com/tiltobias/klimarisk). This repository is intended to make data updates possible without changing the dashboard code.
 
-## Maintainer guides
+## Published dashboard files
 
-- [Norsk vedlikeholdsveiledning](docs/MAINTAINER_GUIDE_NO.md)
-- [English maintainer guide](docs/MAINTAINER_GUIDE_EN.md)
+The dashboard requires these files in the repository root:
 
-## Published data files
-
-The dashboard requires these files in the repository root on the `main` branch:
-
-- `kommune_data.json` — generated municipality and indicator data.
-- `kommune_data_model.json` — generated dashboard data model.
+- `kommune_data.json` — processed municipality and indicator values.
+- `kommune_data_model.json` — processed metadata for the dataset.
 - `kommune.geojson` — municipality geometries.
 
-The published files are available from:
+These filenames and their location in the repository root must remain unchanged.
+
+## Updating the data
+
+The editable source files and preprocessing script are located in `data-update/`.
+
+- `input-files/source_data.xlsx` contains the municipality data.
+- `input-files/source_data_model.json` defines the years, determinants, indicators, names, descriptions, and optional settings.
+- `prepare_data.py` processes the source files.
+- `requirements.txt` lists the required Python packages.
+
+The script generates new versions of:
 
 ```text
-https://tiltobias.github.io/klimarisk-data/
+kommune_data.json
+kommune_data_model.json
 ```
 
-Do not edit the generated JSON files directly. Update the source workbook and source data model, run the preprocessing script, and publish the new outputs.
+These generated files must be placed in the repository root. `kommune.geojson` is maintained separately and normally only needs to be replaced when municipality boundaries or identifiers change.
+
+Do not edit the generated root JSON files directly. Update the source files in `data-update/input-files/` and run the preprocessing script instead.
+
+For complete instructions, see the [Norwegian](docs/MAINTAINER_GUIDE_NO.md) or [English maintainer guide](docs/MAINTAINER_GUIDE_EN.md).
+
+## Deployment
+
+Changes committed to the root data files on the `main` branch are automatically published through GitHub Pages. The live dashboard then fetches the updated files automatically without requiring a new frontend deployment.
