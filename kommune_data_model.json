@@ -167,7 +167,7 @@
           "url": "https://storymaps.arcgis.com/stories/15fe5d46ae09472789e9904c805061f1#ref-n-8KV7o3"
         },
         {
-          "key": "sExitPoints_pKCap",
+          "key": "sExitPoints",
           "name": {
             "no": "Utkjøringsmuligheter",
             "en": "Exit points"
@@ -240,7 +240,7 @@
           "url": "https://storymaps.arcgis.com/stories/15fe5d46ae09472789e9904c805061f1#ref-n-JTZs5p"
         },
         {
-          "key": "eVASK",
+          "key": "eOvervann",
           "name": {
             "no": "Overvannsskade",
             "en": "Surface water damage"
