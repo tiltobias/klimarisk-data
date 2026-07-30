@@ -34,7 +34,7 @@ These generated files must be placed in the repository root. `kommune.geojson` i
 
 Do not edit the generated root JSON files directly. Update the source files in `data-update/input-files/` and run the preprocessing script instead.
 
-For complete instructions, see the [Norwegian](docs/MAINTAINER_GUIDE_NO.md) or [English maintainer guide](docs/MAINTAINER_GUIDE_EN.md).
+For complete instructions, see the [Maintainer guide](docs/MAINTAINER_GUIDE.md).
 
 ## Deployment
 
