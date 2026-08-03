@@ -5,8 +5,8 @@
       "no": "Total Risiko"
     },
     "description": {
-      "no": "Samlet indeks for klimarisiko.",
-      "en": "Composite index of climate risk."
+      "no": "Samlet indeks for klimarisiko. Mørk farge betyr høy klimarisiko, lys farge betyr lav klimarisiko.",
+      "en": "Composite index of climate risk. Darker colors indicate higher climate risk, while lighter colors indicate lower climate risk."
     }
   },
   "elements": [
@@ -17,8 +17,8 @@
         "no": "Fare"
       },
       "description": {
-        "no": "Summen av seks fareindikatorer uten vekting.",
-        "en": "The unweighted sum of six hazard indicators."
+        "no": "Gjennomsnittet seks fareindikatorer, normalisert til en skala fra 0 til 100. Mørk farge betyr høy fare, lys farge betyr lav fare.",
+        "en": "The mean of six hazard indicators, normalized to a scale from 0 to 100. Darker colors indicate higher hazard, while lighter colors indicate lower hazard."
       },
       "metrics": [
         {
@@ -102,8 +102,8 @@
         "no": "Sårbarhet"
       },
       "description": {
-        "no": "Summen av seks sårbarhetsindikatorer uten vekting.",
-        "en": "The unweighted sum of six vulnerability indicators."
+        "no": "Gjennomsnittet av seks sårbarhetsindikatorer, normalisert til en skala fra 0 til 100. Mørk farge betyr høy sårbarhet, lys farge betyr lav sårbarhet.",
+        "en": "The mean of six vulnerability indicators, normalized to a scale from 0 to 100. Darker colors indicate higher vulnerability, while lighter colors indicate lower vulnerability."
       },
       "metrics": [
         {
@@ -187,8 +187,8 @@
         "no": "Eksponering"
       },
       "description": {
-        "no": "Summen av fem eksponeringsindikatorer uten vekting.",
-        "en": "The unweighted sum of five exposure indicators."
+        "no": "Gjennomsnittet av fem eksponeringsindikatorer, normalisert til en skala fra 0 til 100. Mørk farge betyr høy eksponering, lys farge betyr lav eksponering.",
+        "en": "The mean of five exposure indicators, normalized to a scale from 0 to 100. Darker colors indicate higher exposure, while lighter colors indicate lower exposure."
       },
       "metrics": [
         {
@@ -260,8 +260,8 @@
         "no": "Respons"
       },
       "description": {
-        "no": "Gjennomsnitt av opptil seks responsindikatorer med verdi, normalisert. Siden det er mangel på respons som bidrar til økt klimarisiko snur vi indikatoren for å bygge klimarisikoindeksen.",
-        "en": "The normalized mean of up to six response indicators with available values. Because a lack of response contributes to increased climate risk, the determinant is inverted when constructing the climate risk index."
+        "no": "Gjennomsnitt av opptil seks responsindikatorer med verdi, normalisert til en skala fra 0 til 100. Siden det er mangelen på respons som bidrar til økt klimarisiko, snur vi indikatoren for å bygge klimarisikoindeksen. Mørk farge betyr lav respons, lys farge betyr høy respons.",
+        "en": "The mean of up to six response indicators with available values, normalized to a scale from 0 to 100. Because a lack of response contributes to increased climate risk, the determinant is inverted when constructing the climate risk index. Darker colors indicate lower response, while lighter colors indicate higher response."
       },
       "invert": true,
       "metrics": [
@@ -320,8 +320,8 @@
             "en": "Land-Use plan age"
           },
           "description": {
-            "no": "Vi henter data for denne indikatoren fra SSBs KOSTRA program. Desto nyere arealplan, desto høyere respons.",
-            "en": "Data for this indicator are obtained from Statistics Norway's KOSTRA programme. The more recent the land-use plan, the higher the response score."
+            "no": "Antall år siden kommuneplanens arealdel ble vedtatt (SSB). Desto nyere arealplan, desto høyere respons.",
+            "en": "The number of years since the municipal plan's land-use section was adopted (Statistics Norway). The more recent the land-use plan, the higher the response score."
           },
           "url": "https://storymaps.arcgis.com/stories/15fe5d46ae09472789e9904c805061f1#ref-n-8VtMJS"
         },
