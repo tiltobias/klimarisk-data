@@ -374,5 +374,23 @@
         }
       ]
     }
+  ],
+  "documentation": [
+    {
+      "no": "Fareindikatorer har vi for 2025 samt framskrevet til 2050 og 2100.",
+      "en": "Hazard indicators are available for 2025 and projected for 2050 and 2100."
+    },
+    {
+      "no": "Sårbarhetsindikatorer har vi for 2025 samt framskrevet til 2050. For 2100 bruker vi indikatorene for 2050.",
+      "en": "Vulnerability indicators are available for 2025 and projected for 2050. For 2100, the 2050 indicators are used."
+    },
+    {
+      "no": "Eksponeringsindikatoren Overvannskade har vi for 2025 samt framskrevet til 2050 og 2100. De andre indikatorene har vi for 2025 og framskrevet til 2050. For fjern fremtid (2100) bruker vi indikatorene for nær fremtid (2050).",
+      "en": "The exposure indicator Surface water damage is available for 2025 and projected for 2050 and 2100. The other exposure indicators are available for 2025 and projected for 2050. For the distant future (2100), the indicators for the near future (2050) are used."
+    },
+    {
+      "no": "Responsindikatorene har vi ikke framskrevet, men bruker versjonene for 2025 også for 2050 og 2100.",
+      "en": "Response indicators have not been projected. Instead, the 2025 values are used for both 2050 and 2100."
+    }
   ]
 }

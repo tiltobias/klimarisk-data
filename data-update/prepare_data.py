@@ -80,6 +80,10 @@ def cleanDataModel(dm):
             "name": year["name"],
             "description": year["description"],
         } for year in dm["years"]],
+
+        "documentation": [
+            item for item in dm["documentation"]
+        ],
     }
 
 
