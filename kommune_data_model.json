@@ -17,7 +17,7 @@
         "no": "Fare"
       },
       "description": {
-        "no": "Gjennomsnittet seks fareindikatorer, normalisert til en skala fra 0 til 100. Mørk farge betyr høy fare, lys farge betyr lav fare.",
+        "no": "Gjennomsnittet av seks fareindikatorer, normalisert til en skala fra 0 til 100. Mørk farge betyr høy fare, lys farge betyr lav fare.",
         "en": "The mean of six hazard indicators, normalized to a scale from 0 to 100. Darker colors indicate higher hazard, while lighter colors indicate lower hazard."
       },
       "metrics": [
@@ -198,8 +198,8 @@
             "en": "Landslide damage"
           },
           "description": {
-            "no": "Skade på hus grunnet skred. Middel for første og andre del av perioden. Andre del av perioden er kombinert 2025 versjonen, Indekser for 2025 og 2050 lages basert på absolutte tall og endring mellom periodene.",
-            "en": "Damage to buildings caused by landslides. Mean values are calculated for the first and second parts of the period. The second part of the period is combined with the 2025 version. The indices for 2025 and 2050 are based on absolute values and the change between the periods."
+            "no": "Vi bruker percentilrangering av forsikringskompensasjoner for å dekke skade på hus grunnet skred.",
+            "en": "We use percentile rankings of insurance compensation payments to represent damage to houses caused by landslides."
           },
           "url": "https://storymaps.arcgis.com/stories/15fe5d46ae09472789e9904c805061f1#ref-n-5Jz6OP"
         },
@@ -210,8 +210,8 @@
             "en": "Storm damage"
           },
           "description": {
-            "no": "Skade på hus grunnet storm. Middel for første og andre del av perioden. Andre del av perioden er kombinert 2025 versjonen, Indekser for 2025 og 2050 lages basert på absolutte tall og endring mellom periodene.",
-            "en": "Damage to buildings caused by storms. Mean values are calculated for the first and second parts of the period. The second part of the period is combined with the 2025 version. The indices for 2025 and 2050 are based on absolute values and the change between the periods."
+            "no": "Vi bruker percentilrangering av forsikringskompensasjoner for å dekke skade på hus grunnet storm.",
+            "en": "We use percentile rankings of insurance compensation payments to represent damage to houses caused by storms."
           },
           "url": "https://storymaps.arcgis.com/stories/15fe5d46ae09472789e9904c805061f1#ref-n-N8geFB"
         },
@@ -222,8 +222,8 @@
             "en": "Storm surge damage"
           },
           "description": {
-            "no": "Skade på hus grunnet stormflo. Middel for første og andre del av perioden. Andre del av perioden er kombinert 2025 versjonen, Indekser for 2025 og 2050 lages basert på absolutte tall og endring mellom periodene.",
-            "en": "Damage to buildings caused by storm surges. Mean values are calculated for the first and second parts of the period. The second part of the period is combined with the 2025 version. The indices for 2025 and 2050 are based on absolute values and the change between the periods."
+            "no": "Vi bruker percentilrangering av forsikringskompensasjoner for å dekke skade på hus grunnet stormflo.",
+            "en": "We use percentile rankings of insurance compensation payments to represent damage to houses caused by storm surges."
           },
           "url": "https://storymaps.arcgis.com/stories/15fe5d46ae09472789e9904c805061f1#ref-n-ws8zwB"
         },
@@ -234,8 +234,8 @@
             "en": "Flood damage"
           },
           "description": {
-            "no": "Skade på hus grunnet flom. Middel for første og andre del av perioden. Andre del av perioden er kombinert 2025 versjonen, Indekser for 2025 og 2050 lages basert på absolutte tall og endring mellom periodene.",
-            "en": "Damage to buildings caused by flooding. Mean values are calculated for the first and second parts of the period. The second part of the period is combined with the 2025 version. The indices for 2025 and 2050 are based on absolute values and the change between the periods."
+            "no": "Vi bruker percentilrangering av forsikringskompensasjoner for å dekke skade på hus grunnet flom.",
+            "en": "We use percentile rankings of insurance compensation payments to represent damage to houses caused by flooding."
           },
           "url": "https://storymaps.arcgis.com/stories/15fe5d46ae09472789e9904c805061f1#ref-n-JTZs5p"
         },
@@ -246,8 +246,8 @@
             "en": "Surface water damage"
           },
           "description": {
-            "no": "Skade på hus grunnet overvann. Middel for første og andre del av perioden. Andre del av perioden er kombinert 2025 versjonen, Indekser for 2025 og 2050 lages basert på absolutte tall og endring mellom periodene.",
-            "en": "Damage to buildings caused by surface water flooding. Mean values are calculated for the first and second parts of the period. The second part of the period is combined with the 2025 version. The indices for 2025 and 2050 are based on absolute values and the change between the periods."
+            "no": "Vi bruker forsikringskompensasjoner for å beregne eksponeringsindikator for overvann for referanseperioden (som vi kaller 2025). Framskrivinger til nær fremtid (2050) og fjern fremtid (2100) for overvann gjør vi ved hjelp av tilpassede framskrivninger gjort av Norsk Regnesentral for det oppnevnte ekspertutvalget om klimatilpasning.",
+            "en": "We use insurance compensation payments to calculate the exposure indicator for surface water flooding for the reference period (referred to as 2025). Projections for the near future (2050) and distant future (2100) are based on tailored projections produced by the Norwegian Computing Center for the appointed expert committee on climate adaptation."
           },
           "url": "https://storymaps.arcgis.com/stories/15fe5d46ae09472789e9904c805061f1#ref-n-HawoeS"
         }
@@ -260,8 +260,8 @@
         "no": "Respons"
       },
       "description": {
-        "no": "Gjennomsnitt av opptil seks responsindikatorer med verdi, normalisert til en skala fra 0 til 100. Siden det er mangelen på respons som bidrar til økt klimarisiko, snur vi indikatoren for å bygge klimarisikoindeksen. Mørk farge betyr lav respons, lys farge betyr høy respons.",
-        "en": "The mean of up to six response indicators with available values, normalized to a scale from 0 to 100. Because a lack of response contributes to increased climate risk, the determinant is inverted when constructing the climate risk index. Darker colors indicate lower response, while lighter colors indicate higher response."
+        "no": "Gjennomsnittet av opptil seks responsindikatorer med verdi, normalisert til en skala fra 0 til 100. Siden det er mangelen på respons som bidrar til økt klimarisiko, snur vi verdien for å bygge klimarisikoindeksen. Mørk farge betyr lav respons, lys farge betyr høy respons.",
+        "en": "The mean of up to six response indicators with available values, normalized to a scale from 0 to 100. Because a lack of response contributes to increased climate risk, the value is inverted when constructing the climate risk index. Darker colors indicate lower response, while lighter colors indicate higher response."
       },
       "invert": true,
       "metrics": [
@@ -273,7 +273,7 @@
           },
           "description": {
             "no": "Lokale tiltak med statlig støtte (MDir). Indikatoren er basert på en årlige oversikter over alle som har søkt om midler og alle som har fått midler for å gjennomføre klimatilpasningstiltak for perioden 2015 – 2025 (totalt 11 år).",
-            "en": "Local measures receiving central-government support through the Norwegian Environment Agency. The indicator is based on annual records of all applicants and recipients of funding for climate-adaptation measures during the period 2015-2025, covering a total of 11 years."
+            "en": "Local measures receiving central-government support through the Norwegian Environment Agency. The indicator is based on annual records of all applicants and recipients of funding for climate-adaptation measures during the period 2015–2025, covering a total of 11 years."
           },
           "url": "https://storymaps.arcgis.com/stories/15fe5d46ae09472789e9904c805061f1#ref-n-KwrH7q"
         },
