@@ -83,7 +83,8 @@ Its root structure is:
 {
   "years": [],
   "risk": {},
-  "determinants": []
+  "determinants": [],
+  "documentation": []
 }
 ```
 
@@ -96,6 +97,7 @@ Only use the properties described below.
 | `years` | Yes | Array containing at least one year object. |
 | `risk` | Yes | Metadata for the total climate-risk value. |
 | `determinants` | Yes | Array containing at least one determinant object. |
+| `documentation` | No | Array containing documentation entries. |
 
 ### Year properties
 
@@ -208,6 +210,23 @@ Example:
 }
 ```
 
+### Documentation list
+
+The optional `documentation` array can contain any number of entries. Each entry is a JSON object with text in every dashboard language. The generated report displays the entries in the order they appear in the array at the end of the PDF document.
+
+Example: 
+
+```json
+{
+  "documentation": [
+    {
+      "no": "Kort norsk dokumentasjonstekst.",
+      "en": "Short English documentation text."
+    }
+  ]
+}
+```
+
 ### Complete example model
 
 This example contains one year, one determinant, and one indicator:
@@ -262,6 +281,12 @@ This example contains one year, one determinant, and one indicator:
           "url": "https://example.org/indicator"
         }
       ]
+    }
+  ],
+  "documentation": [
+    {
+      "no": "Kort norsk dokumentasjonstekst.",
+      "en": "Short English documentation text."
     }
   ]
 }
